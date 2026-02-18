@@ -21,7 +21,7 @@ export class NotePage {
     constructor(page: Page) {
         this.page = page;
         this.formHelper = new FormHelper(page);
-        this.addNoteButton = page.locator('.btn.btn-primary.mt-3.mt-lg-0');
+        this.addNoteButton = page.locator("button[data-testid='add-new-note']");
         this.titleInput = page.locator('#title');
         this.descriptionInput = page.locator('#description');
         this.createButton = page.locator("button[data-testid='note-submit']");
