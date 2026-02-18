@@ -2,7 +2,7 @@ name: Run Playwright Tests Daily
 
 on:
   schedule:
-   cron: '45 13 * * *'  # This is 7:30 PM NPT (1:45 PM UTC)
+    - cron: '0 0 * * *'  # This is 7:30 PM NPT (1:45 PM UTC)
   workflow_dispatch: 
 
 
